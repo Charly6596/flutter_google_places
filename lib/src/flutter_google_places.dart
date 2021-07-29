@@ -247,7 +247,6 @@ class _PlacesAutocompleteResult extends State<PlacesAutocompleteResult> {
   @override
   Widget build(BuildContext context) {
     final state = PlacesAutocompleteWidget.of(context)!;
-    assert(state != null);
 
     if (state._queryTextController!.text.isEmpty ||
         state._response == null ||
@@ -284,7 +283,6 @@ class _AppBarPlacesAutoCompleteTextFieldState
   @override
   Widget build(BuildContext context) {
     final state = PlacesAutocompleteWidget.of(context)!;
-    assert(state != null);
 
     return Container(
         alignment: Alignment.topLeft,
